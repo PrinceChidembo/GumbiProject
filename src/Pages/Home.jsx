@@ -3,6 +3,7 @@ import NavbarComponent from "../components/NavbarComponent";
 import HeroSection from "../components/HeroSection";
 import Footer from "../components/Footer";
 import VisionMission from "../components/VissionMission";
+import ServicesGrid from "../components/ServicesGrid";
 
 function Home() {
   return (
@@ -10,7 +11,7 @@ function Home() {
       <NavbarComponent />
       <HeroSection />
       <VisionMission />
-
+      <ServicesGrid />
       <Footer />
     </div>
   );
