@@ -47,29 +47,62 @@ const NavbarComponent = () => {
               id="services-dropdown"
               className="me-lg-4 py-2 px-3 fw-medium"
               style={{ color: "#8c6e46" }}
+              menuVariant="dark" // Dark dropdown variant for better readability
             >
-              <NavDropdown.Item as={Link} to="/services/painting">
+              <NavDropdown.Item
+                as={Link}
+                to="/services/painting"
+                style={{ backgroundColor: "#8c6e46", color: "white" }}
+              >
                 Painting
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/services/plumbing">
+              <NavDropdown.Item
+                as={Link}
+                to="/Services/PlumbingPage" // Correct Link for Plumbing
+                style={{ backgroundColor: "#8c6e46", color: "white" }}
+              >
                 Plumbing
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/services/waterproofing">
+              <NavDropdown.Item
+                as={Link}
+                to="/Services/waterproofing"
+                style={{ backgroundColor: "#8c6e46", color: "white" }}
+              >
                 Waterproofing
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/services/door-hanging">
+              <NavDropdown.Item
+                as={Link}
+                to="/services/door-hanging"
+                style={{ backgroundColor: "#8c6e46", color: "white" }}
+              >
                 Door Hanging
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/services/partitioning">
+              <NavDropdown.Item
+                as={Link}
+                to="/services/partitioning"
+                style={{ backgroundColor: "#8c6e46", color: "white" }}
+              >
                 Partitioning
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/services/ceilings">
+              <NavDropdown.Item
+                as={Link}
+                to="/services/ceilings"
+                style={{ backgroundColor: "#8c6e46", color: "white" }}
+              >
                 Ceilings
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/services/bulkheads">
+              <NavDropdown.Item
+                as={Link}
+                to="/services/bulkheads"
+                style={{ backgroundColor: "#8c6e46", color: "white" }}
+              >
                 Bulkheads
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/services/fix-suspended-ceilings">
+              <NavDropdown.Item
+                as={Link}
+                to="/services/fix-suspended-ceilings"
+                style={{ backgroundColor: "#8c6e46", color: "white" }}
+              >
                 Fix Suspended Ceilings
               </NavDropdown.Item>
             </NavDropdown>
