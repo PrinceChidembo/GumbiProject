@@ -98,11 +98,11 @@ const Footer = () => {
             </a>
           </p>
           <p>
-            Phone:{" "}
+            Phone: <br></br>
             <a href="tel:+27839580930" style={{ color: "#8c6e46" }}>
               +27839580930
             </a>{" "}
-            or{" "}
+            <br></br>
             <a href="tel:+27730095280" style={{ color: "#8c6e46" }}>
               +27730095280
             </a>

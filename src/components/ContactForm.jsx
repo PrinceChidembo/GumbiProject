@@ -44,12 +44,14 @@ const ContactForm = () => {
 
           <div className="flex items-center mb-4">
             <Phone className="text-cyan-500 mr-3" size={24} />
-            <p className="m-0">+27 XX XXX XXXX</p>
+            <p className="m-0">
+              +27730095280<br></br>+27839580930
+            </p>
           </div>
 
           <div className="flex items-center mb-4">
             <Mail className="text-cyan-500 mr-3" size={24} />
-            <p className="m-0">contact@example.com</p>
+            <p className="m-0">Fungaimusvipa3@gmail.com</p>
           </div>
         </Col>
 
