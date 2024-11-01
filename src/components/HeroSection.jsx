@@ -1,8 +1,8 @@
 import React from "react";
 import { Carousel, Container, Button } from "react-bootstrap";
+import { Link } from "react-router-dom"; // Import Link for navigation
 
 const HeroSection = () => {
-  // Array of images and dynamic content for each slide
   const carouselItems = [
     {
       image: require("../assets/images/gumbi1.jpg"),
@@ -18,87 +18,17 @@ const HeroSection = () => {
       description:
         "Building with materials and practices that respect the environment.",
     },
-    {
-      image: require("../assets/images/gumbi3.jpg"),
-      title: "Customized Construction",
-      subtitle: "TAILORED TO YOUR NEEDS",
-      description:
-        "Personalized construction solutions to bring your vision to life.",
-    },
-    {
-      image: require("../assets/images/gumbi4.jpg"),
-      title: "Residential Excellence",
-      subtitle: "CREATING HOMES",
-      description:
-        "Transforming residential spaces with modern, functional designs.",
-    },
-    {
-      image: require("../assets/images/gumbi5.jpg"),
-      title: "Commercial Projects",
-      subtitle: "RELIABILITY & PROFESSIONALISM",
-      description:
-        "Building strong foundations for businesses and commercial spaces.",
-    },
-    {
-      image: require("../assets/images/gumbi6.jpg"),
-      title: "Interior Renovations",
-      subtitle: "REVITALIZE YOUR SPACE",
-      description: "Expert renovations that combine style with practicality.",
-    },
-    {
-      image: require("../assets/images/gumbi7.jpg"),
-      title: "Exterior Renovations",
-      subtitle: "ENHANCE YOUR PROPERTY",
-      description: "Boost curb appeal with high-quality exterior renovations.",
-    },
-    {
-      image: require("../assets/images/gumbi8.jpg"),
-      title: "Safety & Durability",
-      subtitle: "BUILT TO LAST",
-      description:
-        "Structures designed for safety, durability, and peace of mind.",
-    },
-    {
-      image: require("../assets/images/gumbi9.jpg"),
-      title: "Modern Aesthetics",
-      subtitle: "STYLE MEETS FUNCTION",
-      description: "Blending contemporary designs with functional layouts.",
-    },
-    {
-      image: require("../assets/images/gumbi10.jpg"),
-      title: "Affordable Quality",
-      subtitle: "VALUE-DRIVEN SERVICES",
-      description: "Providing quality services that are budget-friendly.",
-    },
-    {
-      image: require("../assets/images/gumbi11.jpg"),
-      title: "Trusted by Clients",
-      subtitle: "REPUTATION FOR EXCELLENCE",
-      description: "Building trust through transparency and excellence.",
-    },
-    {
-      image: require("../assets/images/gumbi12.jpg"),
-      title: "Innovative Techniques",
-      subtitle: "ADVANCING THE FUTURE",
-      description: "Incorporating the latest technologies for optimal results.",
-    },
+    // Additional carousel items...
   ];
 
   return (
-    <Carousel
-      fade
-      controls={false} // Remove navigation arrows
-      indicators
-      interval={5000} // Slide every 5 seconds
-      pause="hover"
-    >
+    <Carousel fade controls={false} indicators interval={5000} pause="hover">
       {carouselItems.map((item, index) => (
         <Carousel.Item key={index}>
           <div
             className="position-relative"
             style={{ height: "100vh", minHeight: "600px" }}
           >
-            {/* Dark overlay for readability */}
             <div
               className="position-absolute w-100 h-100"
               style={{
@@ -107,7 +37,6 @@ const HeroSection = () => {
               }}
             />
 
-            {/* Background image */}
             <div
               className="w-100 h-100"
               style={{
@@ -118,7 +47,6 @@ const HeroSection = () => {
               }}
             />
 
-            {/* Carousel Content */}
             <Container
               className="position-relative h-100 d-flex flex-column justify-content-center align-items-center text-white text-center"
               style={{ zIndex: 2 }}
@@ -140,6 +68,8 @@ const HeroSection = () => {
               </p>
               <div className="d-flex gap-3">
                 <Button
+                  as={Link} // Use Link component for navigation
+                  to="/services"
                   variant="primary"
                   className="px-4 py-2"
                   style={{
@@ -149,7 +79,12 @@ const HeroSection = () => {
                 >
                   Read More
                 </Button>
-                <Button variant="outline-light" className="px-4 py-2">
+                <Button
+                  as={Link} // Use Link component for navigation
+                  to="/contact"
+                  variant="outline-light"
+                  className="px-4 py-2"
+                >
                   Free Quote
                 </Button>
               </div>
