@@ -112,7 +112,7 @@ const Footer = () => {
         <div className="footer-social">
           <h4>Follow Us</h4>
           <a
-            href="https://www.facebook.com/IQwhales"
+            href="ttps://www.facebook.com/IQwhalesh"
             target="_blank"
             rel="noopener noreferrer"
             style={{ color: "#8c6e46", marginRight: "10px" }}

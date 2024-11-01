@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 // Import images
@@ -12,6 +12,10 @@ import bulkheadsImage from "../assets/images/servicegrid/bulkhead.jpg";
 import fixSuspendedCeilingsImage from "../assets/images/servicegrid/suspendedceiling.jpg";
 
 function OurServices() {
+  const [showDescriptions, setShowDescriptions] = useState(
+    Array(8).fill(false) // Initial state with false for each service
+  );
+
   const services = [
     {
       name: "Painting",
@@ -60,6 +64,12 @@ function OurServices() {
     },
   ];
 
+  const toggleDescription = (index) => {
+    setShowDescriptions((prev) =>
+      prev.map((show, i) => (i === index ? !show : show))
+    );
+  };
+
   return (
     <div className="container-fluid p-0" style={{ backgroundColor: "#8c6e46" }}>
       <h2 className="text-center py-4 text-white">Our Services</h2>
@@ -78,9 +88,14 @@ function OurServices() {
                 style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
               >
                 <h5 className="text-white m-0 py-2">{service.name}</h5>
-                <p className="text-white m-0 px-2">{service.description}</p>
-                <button className="btn btn-outline-light btn-sm mt-2">
-                  Learn More
+                {showDescriptions[index] && (
+                  <p className="text-white m-0 px-2">{service.description}</p>
+                )}
+                <button
+                  className="btn btn-outline-light btn-sm mt-2"
+                  onClick={() => toggleDescription(index)}
+                >
+                  {showDescriptions[index] ? "Show Less" : "Learn More"}
                 </button>
               </div>
             </div>

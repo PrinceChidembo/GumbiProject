@@ -1,6 +1,6 @@
 import React from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import gumbiLogo from "../assets/images/gumbilogo.jpg";
 
 const NavbarComponent = () => {
@@ -40,14 +40,40 @@ const NavbarComponent = () => {
             >
               ABOUT
             </Nav.Link>
-            <Nav.Link
-              as={Link}
-              to="/services"
+
+            {/* Services Dropdown Menu */}
+            <NavDropdown
+              title="SERVICES"
+              id="services-dropdown"
               className="me-lg-4 py-2 px-3 fw-medium"
               style={{ color: "#8c6e46" }}
             >
-              SERVICES
-            </Nav.Link>
+              <NavDropdown.Item as={Link} to="/services/painting">
+                Painting
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/services/plumbing">
+                Plumbing
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/services/waterproofing">
+                Waterproofing
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/services/door-hanging">
+                Door Hanging
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/services/partitioning">
+                Partitioning
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/services/ceilings">
+                Ceilings
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/services/bulkheads">
+                Bulkheads
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/services/fix-suspended-ceilings">
+                Fix Suspended Ceilings
+              </NavDropdown.Item>
+            </NavDropdown>
+
             <Nav.Link
               as={Link}
               to="/contact"
@@ -57,9 +83,11 @@ const NavbarComponent = () => {
               CONTACT
             </Nav.Link>
           </Nav>
+
+          {/* Get A Quote Button */}
           <Nav className="ms-lg-2">
             <Nav.Link
-              as={Link} // Change to navigate to the contact page
+              as={Link}
               to="/contact"
               className="btn text-white px-4 py-2 mt-3 mt-lg-0"
               style={{
