@@ -47,7 +47,7 @@ const NavbarComponent = () => {
               id="services-dropdown"
               className="me-lg-4 py-2 px-3 fw-medium"
               style={{ color: "#8c6e46" }}
-              menuVariant="dark" // Dark dropdown variant for better readability
+              menuVariant="dark"
             >
               <NavDropdown.Item
                 as={Link}
@@ -58,14 +58,14 @@ const NavbarComponent = () => {
               </NavDropdown.Item>
               <NavDropdown.Item
                 as={Link}
-                to="/Services/PlumbingPage" // Correct Link for Plumbing
+                to="/services/plumbing"
                 style={{ backgroundColor: "#8c6e46", color: "white" }}
               >
                 Plumbing
               </NavDropdown.Item>
               <NavDropdown.Item
                 as={Link}
-                to="/Services/waterproofing"
+                to="/services/waterproofing"
                 style={{ backgroundColor: "#8c6e46", color: "white" }}
               >
                 Waterproofing
