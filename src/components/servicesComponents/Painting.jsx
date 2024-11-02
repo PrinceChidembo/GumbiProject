@@ -8,7 +8,7 @@ const Painting = () => {
     <Container
       fluid
       className="py-5"
-      style={{ backgroundColor: "#6E8C8F", color: "#ffffff" }}
+      style={{ backgroundColor: "#8c6e46", color: "#ffffff" }}
     >
       {/* Hero Section with Background Image */}
       <div
