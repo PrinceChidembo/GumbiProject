@@ -54,56 +54,57 @@ const NavbarComponent = () => {
                 to="/services/painting"
                 style={{ backgroundColor: "#8c6e46", color: "white" }}
               >
-                Painting
+                <span style={{ marginRight: "8px" }}>➤</span> Painting
               </NavDropdown.Item>
               <NavDropdown.Item
                 as={Link}
                 to="/services/plumbing"
                 style={{ backgroundColor: "#8c6e46", color: "white" }}
               >
-                Plumbing
+                <span style={{ marginRight: "8px" }}>➤</span> Plumbing
               </NavDropdown.Item>
               <NavDropdown.Item
                 as={Link}
                 to="/services/waterproofing"
                 style={{ backgroundColor: "#8c6e46", color: "white" }}
               >
-                Waterproofing
+                <span style={{ marginRight: "8px" }}>➤</span> Waterproofing
               </NavDropdown.Item>
               <NavDropdown.Item
                 as={Link}
                 to="/services/door-hanging"
                 style={{ backgroundColor: "#8c6e46", color: "white" }}
               >
-                Door Hanging
+                <span style={{ marginRight: "8px" }}>➤</span> Door Hanging
               </NavDropdown.Item>
               <NavDropdown.Item
                 as={Link}
                 to="/services/partitioning"
                 style={{ backgroundColor: "#8c6e46", color: "white" }}
               >
-                Partitioning
+                <span style={{ marginRight: "8px" }}>➤</span> Partitioning
               </NavDropdown.Item>
               <NavDropdown.Item
                 as={Link}
                 to="/services/ceilings"
                 style={{ backgroundColor: "#8c6e46", color: "white" }}
               >
-                Ceilings
+                <span style={{ marginRight: "8px" }}>➤</span> Ceilings
               </NavDropdown.Item>
               <NavDropdown.Item
                 as={Link}
                 to="/services/bulkheads"
                 style={{ backgroundColor: "#8c6e46", color: "white" }}
               >
-                Bulkheads
+                <span style={{ marginRight: "8px" }}>➤</span> Bulkheads
               </NavDropdown.Item>
               <NavDropdown.Item
                 as={Link}
                 to="/services/fix-suspended-ceilings"
                 style={{ backgroundColor: "#8c6e46", color: "white" }}
               >
-                Fix Suspended Ceilings
+                <span style={{ marginRight: "8px" }}>➤</span> Fix Suspended
+                Ceilings
               </NavDropdown.Item>
             </NavDropdown>
 
