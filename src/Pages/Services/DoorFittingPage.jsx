@@ -1,16 +1,16 @@
 import React from "react";
 import NavbarComponent from "../../components/NavbarComponent";
 import Footer from "../../components/Footer";
-import Painting from "../../components/servicesComponents/Painting";
+import DoorFitting from "../../components/servicesComponents/DoorFitting";
 
-function PaintingPage() {
+function DoorHangingPage() {
   return (
     <div className="Home">
       <NavbarComponent />
-      <Painting />
+      <DoorFitting />
       <Footer />
     </div>
   );
 }
 
-export default PaintingPage;
+export default DoorHangingPage;

@@ -6,7 +6,8 @@ import About from "./Pages/About";
 import Services from "./Pages/Services";
 import Contact from "./Pages/Contact";
 import PlumbingPage from "./Pages/PlumbingPage";
-
+import DoorFittingPage from "./Pages/Services/DoorFittingPage";
+import PaintingPage from "./Pages/Services/PaintingPage";
 const App = () => {
   return (
     <Router>
@@ -18,9 +19,9 @@ const App = () => {
 
         {/* Service Routes */}
         <Route path="/services/plumbing" element={<PlumbingPage />} />
-        <Route path="/services/painting" element={<Services />} />
+        <Route path="/services/painting" element={<PaintingPage />} />
         <Route path="/services/waterproofing" element={<Services />} />
-        <Route path="/services/door-hanging" element={<Services />} />
+        <Route path="/services/door-hanging" element={<DoorFittingPage />} />
         <Route path="/services/partitioning" element={<Services />} />
         <Route path="/services/ceilings" element={<Services />} />
         <Route path="/services/bulkheads" element={<Services />} />
