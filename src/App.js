@@ -10,6 +10,8 @@ import DoorFittingPage from "./Pages/Services/DoorFittingPage";
 import PaintingPage from "./Pages/Services/PaintingPage";
 import PartitioningPage from "./Pages/Services/PartitioningPage";
 import CeilingPage from "./Pages/Services/CeilingPage";
+import WaterProofingPage from "./Pages/Services/WaterProofingPage";
+import BulkHeadPage from "./Pages/Services/BulkHeadPage";
 const App = () => {
   return (
     <Router>
@@ -22,11 +24,11 @@ const App = () => {
         {/* Service Routes */}
         <Route path="/services/plumbing" element={<PlumbingPage />} />
         <Route path="/services/painting" element={<PaintingPage />} />
-        <Route path="/services/waterproofing" element={<Services />} />
+        <Route path="/services/waterproofing" element={<WaterProofingPage />} />
         <Route path="/services/door-hanging" element={<DoorFittingPage />} />
         <Route path="/services/partitioning" element={<PartitioningPage />} />
         <Route path="/services/ceilings" element={<CeilingPage />} />
-        <Route path="/services/bulkheads" element={<Services />} />
+        <Route path="/services/bulkheads" element={<BulkHeadPage />} />
         <Route path="/services/fix-suspended-ceilings" element={<Services />} />
       </Routes>
     </Router>

@@ -1,28 +1,32 @@
 import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import { Link } from "react-router-dom"; // Import Link for navigation
-import { BsCheckCircle } from "react-icons/bs"; // Import icons
+import { BsCheckCircle } from "react-icons/bs"; // Import Bootstrap icon for checkmarks
+import partitioningImage from "../../assets/images/servicegrid/partitioning.jpg"; // Replace with the image path for partitioning services
 
-const Partitioning = () => {
+const PartitioningServices = () => {
   return (
     <Container
       fluid
       className="py-5"
       style={{ backgroundColor: "#8c6e46", color: "#ffffff" }}
     >
-      {/* Hero Section */}
+      {/* Hero Section with Background Image */}
       <div
         className="partitioning-hero text-center mb-4"
-        style={{ marginLeft: "15px", marginRight: "15px" }}
+        style={{
+          backgroundImage: `url(${partitioningImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          marginLeft: "15px",
+          marginRight: "15px",
+          padding: "3rem 0",
+          borderRadius: "10px",
+        }}
       >
         <h1 className="partitioning-hero-heading display-4">
           Partitioning Services at Gumbi
         </h1>
-        <img
-          src="../../assets/images/services/gumbi11.jpg" // Replace with the path to your image
-          alt="Partitioning Services"
-          style={{ width: "100%", borderRadius: "10px", marginTop: "20px" }}
-        />
       </div>
 
       <Row className="justify-content-center">
@@ -30,10 +34,10 @@ const Partitioning = () => {
           <Card className="bg-transparent border-0 mb-4">
             <Card.Body>
               <p className="lead">
-                At <strong>Gumbi Projects</strong>, our partitioning services
-                transform spaces with a focus on functionality, privacy, and
-                design. We provide tailored solutions that enhance the layout
-                and usability of your space.
+                At <strong>Gumbi Projects</strong>, we offer expert partitioning
+                solutions designed to optimize space and enhance functionality.
+                Our approach ensures seamless integration of partitions that
+                blend style and practicality.
               </p>
 
               <h4 className="mt-4 mb-3">Our Approach to Partitioning</h4>
@@ -42,66 +46,64 @@ const Partitioning = () => {
               <div className="mb-3">
                 <h5>
                   <BsCheckCircle className="me-2" />
-                  Consultation & Planning
+                  Space Assessment & Planning
                 </h5>
                 <p>
-                  We collaborate closely with clients to understand their space
-                  requirements and provide solutions that align with their
-                  vision and needs.
+                  We conduct a thorough assessment to understand your space and
+                  create a partition plan that meets your specific requirements.
                 </p>
               </div>
 
               <div className="mb-3">
                 <h5>
                   <BsCheckCircle className="me-2" />
-                  Material Selection
+                  Material Selection & Design
                 </h5>
                 <p>
-                  We use high-quality, durable materials that complement your
-                  existing interior design while ensuring practicality and
-                  soundproofing where needed.
+                  Our team helps you choose high-quality materials and custom
+                  designs to ensure the partitions suit both the aesthetics and
+                  function of the area.
                 </p>
               </div>
 
               <div className="mb-3">
                 <h5>
                   <BsCheckCircle className="me-2" />
-                  Expert Installation
+                  Precision Installation
                 </h5>
                 <p>
-                  Our skilled team meticulously installs partitions, maintaining
-                  precise alignment and stability to create defined and
-                  attractive spaces.
+                  With meticulous attention to detail, we install partitions
+                  that are durable, stable, and perfectly aligned.
                 </p>
               </div>
 
               <div className="mb-3">
                 <h5>
                   <BsCheckCircle className="me-2" />
-                  Customization & Finishing
+                  Customization & Adjustments
                 </h5>
                 <p>
-                  We offer customizable partitioning options to meet aesthetic
-                  and functional requirements, from glass and aluminum to gypsum
-                  and wooden partitions.
+                  We tailor the installation to match your preferences and
+                  provide any necessary adjustments for optimal results.
                 </p>
               </div>
 
               <div className="mb-3">
                 <h5>
                   <BsCheckCircle className="me-2" />
-                  Post-installation Support
+                  After-Service Support
                 </h5>
                 <p>
-                  Gumbi Projects ensures seamless follow-up services and support
-                  for adjustments or additional requirements.
+                  Our commitment to quality extends beyond installation. We
+                  offer after-service support and maintenance tips to keep your
+                  partitions in perfect condition.
                 </p>
               </div>
 
               <p className="lead">
-                Trust <strong>Gumbi Projects</strong> for partitioning solutions
-                that maximize space utilization while providing privacy and
-                elegance for your home or office.
+                With <strong>Gumbi Projects</strong>, you can rely on innovative
+                partitioning solutions that transform your space to suit your
+                needs and style.
               </p>
 
               {/* Call-to-action Button */}
@@ -120,4 +122,4 @@ const Partitioning = () => {
   );
 };
 
-export default Partitioning;
+export default PartitioningServices;

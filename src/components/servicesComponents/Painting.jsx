@@ -1,9 +1,10 @@
 import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import { Link } from "react-router-dom"; // Import Link for navigation
-import { BsCheckCircle } from "react-icons/bs"; // Import icons
+import { BsCheckCircle } from "react-icons/bs"; // Import Bootstrap icon for checkmarks
+import paintingImage from "../../assets/images/servicegrid/painting.jpg"; // Replace with the image path for painting services
 
-const Painting = () => {
+const PaintingServices = () => {
   return (
     <Container
       fluid
@@ -13,16 +14,19 @@ const Painting = () => {
       {/* Hero Section with Background Image */}
       <div
         className="painting-hero text-center mb-4"
-        style={{ marginLeft: "15px", marginRight: "15px" }}
+        style={{
+          backgroundImage: `url(${paintingImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          marginLeft: "15px",
+          marginRight: "15px",
+          padding: "3rem 0",
+          borderRadius: "10px",
+        }}
       >
         <h1 className="painting-hero-heading display-4">
           Painting Services at Gumbi
         </h1>
-        <img
-          src="../../assets/images/services/spainting1.jpg" // Replace with the path to your image
-          alt="Painting Services"
-          style={{ width: "100%", borderRadius: "10px", marginTop: "20px" }}
-        />
       </div>
 
       <Row className="justify-content-center">
@@ -30,10 +34,10 @@ const Painting = () => {
           <Card className="bg-transparent border-0 mb-4">
             <Card.Body>
               <p className="lead">
-                At <strong>Gumbi Projects</strong>, our painting services
-                showcase a blend of aesthetic appeal and lasting quality. Our
-                approach is tailored to meet your expectations, ensuring
-                vibrant, precise, and durable results.
+                At <strong>Gumbi Projects</strong>, our painting services blend
+                quality craftsmanship with artistic finesse to transform your
+                spaces. Our commitment to precision and durability ensures
+                beautiful, lasting results.
               </p>
 
               <h4 className="mt-4 mb-3">Our Approach to Painting</h4>
@@ -45,9 +49,9 @@ const Painting = () => {
                   Consultation & Color Selection
                 </h5>
                 <p>
-                  We begin with a thorough consultation to understand your
-                  vision, followed by expert color guidance to bring your ideas
-                  to life.
+                  We start by understanding your vision and preferences, helping
+                  you choose the perfect color palette to bring your space to
+                  life.
                 </p>
               </div>
 
@@ -57,8 +61,8 @@ const Painting = () => {
                   Surface Preparation
                 </h5>
                 <p>
-                  Our team ensures that surfaces are properly prepared to
-                  guarantee smooth and flawless paint application.
+                  Our team ensures all surfaces are properly prepared through
+                  cleaning, patching, and priming to achieve a flawless finish.
                 </p>
               </div>
 
@@ -68,8 +72,8 @@ const Painting = () => {
                   Professional Application
                 </h5>
                 <p>
-                  Using high-quality tools and techniques, we achieve an even,
-                  clean finish with attention to detail.
+                  We use high-quality paints and precise techniques to provide
+                  smooth, even coats that stand the test of time.
                 </p>
               </div>
 
@@ -79,28 +83,26 @@ const Painting = () => {
                   Quality Assurance
                 </h5>
                 <p>
-                  Post-application, we inspect our work to ensure it meets our
-                  high standards, giving you a space that is both visually
-                  appealing and long-lasting.
+                  We perform thorough inspections and touch-ups to ensure every
+                  detail meets our high standards of excellence.
                 </p>
               </div>
 
               <div className="mb-3">
                 <h5>
                   <BsCheckCircle className="me-2" />
-                  Cleanup & Care
+                  Post-Painting Care & Maintenance
                 </h5>
                 <p>
-                  We value your property and maintain cleanliness throughout the
-                  process. Our aftercare tips help maintain the longevity of our
-                  work.
+                  We provide tips and guidance on how to maintain the look and
+                  quality of your newly painted space for years to come.
                 </p>
               </div>
 
               <p className="lead">
-                From accent walls to full property makeovers, our painting
-                services at <strong>Gumbi Projects</strong> ensure that your
-                property stands out with a fresh, vibrant look.
+                Trust <strong>Gumbi Projects</strong> to deliver impeccable
+                painting services that add beauty and value to your home or
+                office.
               </p>
 
               {/* Call-to-action Button */}
@@ -119,4 +121,4 @@ const Painting = () => {
   );
 };
 
-export default Painting;
+export default PaintingServices;

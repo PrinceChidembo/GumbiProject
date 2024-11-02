@@ -1,13 +1,13 @@
 import React from "react";
-import NavbarComponent from "../components/NavbarComponent";
-import HeroSection from "../components/HeroSection";
-import Footer from "../components/Footer";
+import NavbarComponent from "../../components/NavbarComponent";
+import Footer from "../../components/Footer";
+import BulkheadFitting from "../../components/servicesComponents/BulkHead";
 
 function BulkHeadPage() {
   return (
     <div className="Home">
       <NavbarComponent />
-      <HeroSection />
+      <BulkheadFitting />
       <Footer />
     </div>
   );
