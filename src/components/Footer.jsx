@@ -76,6 +76,14 @@ const Footer = () => {
                 Suspended Ceiling Fixing
               </a>
             </li>
+            <li>
+              <a
+                href="/services/suspended-ceiling"
+                style={{ color: "#8c6e46" }}
+              >
+                Small hands on Jobs
+              </a>
+            </li>
           </ul>
         </div>
 

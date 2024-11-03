@@ -98,6 +98,14 @@ const NavbarComponent = () => {
               >
                 <span style={{ marginRight: "8px" }}>➤</span> Bulkheads
               </NavDropdown.Item>
+              <NavDropdown.Item
+                as={Link}
+                to="/services/bulkheads"
+                style={{ backgroundColor: "#8c6e46", color: "white" }}
+              >
+                <span style={{ marginRight: "8px" }}>➤</span> Small Hands on
+                Jobs
+              </NavDropdown.Item>
             </NavDropdown>
 
             <Nav.Link
