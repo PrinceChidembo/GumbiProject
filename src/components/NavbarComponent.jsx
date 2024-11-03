@@ -103,7 +103,7 @@ const NavbarComponent = () => {
                 to="/services/bulkheads"
                 style={{ backgroundColor: "#8c6e46", color: "white" }}
               >
-                <span style={{ marginRight: "8px" }}>➤</span> Small Hands on
+                <span style={{ marginRight: "8px" }}>➤</span> Hand-man e.t.c
                 Jobs
               </NavDropdown.Item>
             </NavDropdown>

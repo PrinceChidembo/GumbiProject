@@ -81,7 +81,7 @@ const Footer = () => {
                 href="/services/suspended-ceiling"
                 style={{ color: "#8c6e46" }}
               >
-                Small hands on Jobs
+                Hand-man e.t.c
               </a>
             </li>
           </ul>
