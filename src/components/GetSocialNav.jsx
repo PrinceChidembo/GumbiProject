@@ -17,7 +17,7 @@ const GetSocialNav = () => {
         </Nav.Link>
 
         <Nav.Link
-          href="https://wa.me/+2730095280" // Replace with your WhatsApp number, formatted like ?phone=15551234567
+          href="https://wa.me/+27 73 009 5280" // Replace with your WhatsApp number, formatted like ?phone=15551234567
           target="_blank"
           rel="noopener noreferrer"
           className="text-white"
